@@ -5,7 +5,7 @@ import List from "./Components/List";
 import * as api from "./api";
 
 class App extends React.Component {
-  state = {};
+  state = {data : []};
 
   componentDidMount() {
     api.getData().then((data) => {
@@ -17,6 +17,7 @@ class App extends React.Component {
       <div>
         <Header />
         <List data={this.state.data} />
+        
       </div>
     );
   }
