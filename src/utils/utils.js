@@ -6,9 +6,8 @@ exports.formatData = (data) => {
     delete formatted.recclass;
     delete formatted.reclat;
     delete formatted.reclong;
-    formatted.year = formatted.year.slice(0,4)
+    formatted.year = formatted.year ? formatted.year.slice(0, 4) : null;
+
     return formatted;
   });
 };
-
-

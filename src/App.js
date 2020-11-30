@@ -2,10 +2,11 @@ import "./App.css";
 import React from "react";
 import Header from "./Components/Header";
 import List from "./Components/List";
+import Map from "./Components/Map";
 import * as api from "./api";
 
 class App extends React.Component {
-  state = {data : []};
+  state = { data: [] };
 
   componentDidMount() {
     api.getData().then((data) => {
@@ -16,8 +17,8 @@ class App extends React.Component {
     return (
       <div>
         <Header />
+        <Map data={this.state.data} />
         <List data={this.state.data} />
-        
       </div>
     );
   }

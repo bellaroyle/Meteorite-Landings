@@ -1,8 +1,9 @@
 body {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .leaflet-container {
-  height: 180px;
+  height: 400px;
   width: 100%;
 }
