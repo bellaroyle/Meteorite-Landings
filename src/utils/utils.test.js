@@ -49,7 +49,15 @@ describe('formatData', () => {
         },
       },
     ];
-    const requiredKeys = ['name', 'id', 'mass', 'fall', 'year', 'geolocation'];
+    const requiredKeys = [
+      'name',
+      'id',
+      'mass',
+      'fall',
+      'year',
+      'recclass',
+      'geolocation',
+    ];
     expect(Object.keys(formatData(data)[0])).toEqual(
       expect.arrayContaining(requiredKeys)
     );
